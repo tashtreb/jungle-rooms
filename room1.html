@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>deep rainforest</title>
+    <meta name="description" content="Hello, World!">
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+
+    <style>
+      
+      #text {
+              position: absolute;
+              color:#f7b2c5;
+              text-shadow: 1px 1px 1px blue;
+              
+              width: 1500px;
+              left: -600px;
+              top: 100px;
+              font-size: 300px;
+              text-align: right;
+              text-transform: capitalize;
+            }
+      
+  body {
+  background-image: url('palm.jpeg');
+}
+    </style>
+  </head>
+  <body>
+    <a-scene>
+
+      <a-entity position="0 2.25 -15" particle-system="preset: rain"></a-entity>
+
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+      <a-box position="-1 0.5 -4" rotation="0 45 0" width="1" height="1" depth="1"  color="#4CC3D9"></a-box>
+      <a-cylinder position="1 0.75 -4" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+
+
+      
+    </a-scene>
+
+    <a id=text href="index.html">I'm saying, <span id=as>as</span> Did you click me?</a>
+  </body>
+</html>
